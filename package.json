@@ -5,7 +5,7 @@
   "main": "bot.js",
   "scripts": {
     "test": "node src/test.js",
-    "start": "nodemon src/bot.js"
+    "start": "node src/bot.js"
   },
   "author": "Ammar Ahmed",
   "license": "ISC",
