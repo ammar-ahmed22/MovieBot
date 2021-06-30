@@ -32,7 +32,7 @@ const client = new Discord.Client();
 
 //When the bot is ready
 client.on("ready", async ()=>{
-    await client.user.setActivity('for . (development)', {type: "WATCHING"});
+    await client.user.setActivity((process.env.NODE_ENV === 'DEVELOPMENT') ? 'for . (development)' : 'for .', {type: "WATCHING"});
     console.log(`Logged in as ${client.user.tag}!`)
 })
 
